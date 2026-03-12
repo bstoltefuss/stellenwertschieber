@@ -1,4 +1,4 @@
-const CACHE_NAME = 'stellenwertschieber-v3';
+const CACHE_NAME = 'stellenwertschieber-v4';
 const ASSETS = [
   './',
   './index.html',

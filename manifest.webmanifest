@@ -1,0 +1,23 @@
+{
+  "name": "Stellenwertschieber",
+  "short_name": "Stellenwert",
+  "description": "Schulische Progressive Web App zum Verändern von Stellenwerten.",
+  "lang": "de",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f9ff",
+  "theme_color": "#39a94b",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

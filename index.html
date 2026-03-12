@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#39a94b" />
+    <meta name="description" content="Stellenwertschieber als Progressive Web App" />
+    <title>Stellenwertschieber</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <h1>Stellenwertschieber</h1>
+
+      <section class="board" aria-label="Stellenwertschieber">
+        <div class="column-headings" aria-hidden="true">
+          <div class="heading">ZT</div>
+          <div class="heading">T</div>
+          <div class="heading">H</div>
+          <div class="heading">Z</div>
+          <div class="heading">E</div>
+        </div>
+
+        <div class="row">
+          <div class="cell">
+            <button class="step-btn" data-delta="10000" aria-label="Um zehntausend erhöhen"><span class="symbol">+</span><span class="amount">10000</span></button>
+            <div class="digit-card" aria-live="polite" aria-label="Zehntausenderstelle"><span class="digit" data-place="0">0</span></div>
+            <button class="step-btn" data-delta="-10000" aria-label="Um zehntausend verringern"><span class="symbol">−</span><span class="amount">10000</span></button>
+          </div>
+
+          <div class="cell">
+            <button class="step-btn" data-delta="1000" aria-label="Um tausend erhöhen"><span class="symbol">+</span><span class="amount">1000</span></button>
+            <div class="digit-card" aria-live="polite" aria-label="Tausenderstelle"><span class="digit" data-place="1">0</span></div>
+            <button class="step-btn" data-delta="-1000" aria-label="Um tausend verringern"><span class="symbol">−</span><span class="amount">1000</span></button>
+          </div>
+
+          <div class="cell">
+            <button class="step-btn" data-delta="100" aria-label="Um hundert erhöhen"><span class="symbol">+</span><span class="amount">100</span></button>
+            <div class="digit-card" aria-live="polite" aria-label="Hunderterstelle"><span class="digit" data-place="2">0</span></div>
+            <button class="step-btn" data-delta="-100" aria-label="Um hundert verringern"><span class="symbol">−</span><span class="amount">100</span></button>
+          </div>
+
+          <div class="cell">
+            <button class="step-btn" data-delta="10" aria-label="Um zehn erhöhen"><span class="symbol">+</span><span class="amount">10</span></button>
+            <div class="digit-card" aria-live="polite" aria-label="Zehnerstelle"><span class="digit" data-place="3">0</span></div>
+            <button class="step-btn" data-delta="-10" aria-label="Um zehn verringern"><span class="symbol">−</span><span class="amount">10</span></button>
+          </div>
+
+          <div class="cell">
+            <button class="step-btn" data-delta="1" aria-label="Um eins erhöhen"><span class="symbol">+</span><span class="amount">1</span></button>
+            <div class="digit-card" aria-live="polite" aria-label="Einerstelle"><span class="digit" data-place="4">0</span></div>
+            <button class="step-btn" data-delta="-1" aria-label="Um eins verringern"><span class="symbol">−</span><span class="amount">1</span></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
